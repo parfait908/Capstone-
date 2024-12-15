@@ -1,0 +1,17 @@
+# Ignore build, devel, and install directories
+/build/
+/devel/
+/install/
+
+# Ignore ROS log files
+*.log
+
+# Ignore IDE configuration files
+*.swp
+.idea/
+.vscode/
+
+# Ignore other common temporary files
+*~
+.DS_Store
+Thumbs.db
