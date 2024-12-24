@@ -1,0 +1,60 @@
+{
+  "name": "ros_gui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
+    "@createjs/easeljs": "^2.0.0-beta.4",
+    "axios": "^1.7.8",
+    "cra-template": "1.2.0",
+    "easeljs": "^1.0.2",
+    "eventemitter2": "^6.4.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.4.0",
+    "react-scripts": "5.0.1",
+    "ros2d": "^0.10.0",
+    "roslib": "^1.4.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
+    "postcss": "^8.4.49",
+    "react-app-rewired": "^2.2.1",
+    "react-router-dom": "^7.0.1",
+    "tailwindcss": "^3.4.16",
+    "webpack": "^5.97.1",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
