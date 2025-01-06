@@ -7,3 +7,4 @@ i divided my work into two folders :
   * ie_api : this node handle the communication between ros and the web application
   * movementController : this node update the robot movement according to what user desires to use through the GUI
   * cameraController : this node manage all of the camera found on the robot and conver them to images to send to the web   application
+  * follower : this node manage the line following system, with detection of junction and choice of side to continue and also qr code detection

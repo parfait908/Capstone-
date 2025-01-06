@@ -5,3 +5,5 @@
 * run catkin_make command
 * run source devel/setup.bash
 * run roslaunch ie_communication lch.launch
+* qreader and cv2 are required to launch follower.py
+* run follower.py separately as a normal python file
