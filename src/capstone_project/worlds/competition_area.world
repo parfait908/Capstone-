@@ -541,7 +541,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone'>
+      <model name='qr_code_station_1_right'>
         <pose>4.475 1 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -551,7 +551,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0'>
+      <model name='qr_code_station_1_left'>
         <pose>4.475 -1 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -561,7 +561,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone'>
+      <model name='qr_code_d_center'>
         <pose>0 -4.66666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -571,7 +571,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_0'>
+      <model name='qr_code_zone_d_down'>
         <pose>1 -4.66667 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -581,7 +581,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_1'>
+      <model name='qr_code_zone_d_up'>
         <pose>-1 -4.66666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -591,7 +591,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_1_clone'>
+      <model name='qr_code_intersection_zone_d_station_2'>
         <pose>-4.475 -4.666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -611,7 +611,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_1_clone_1'>
+      <model name='qr_code_zone_y_center'>
         <pose>0 -6.999 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -621,7 +621,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_2'>
+      <model name='qr_code_intersection_zone_b_station_1'>
         <pose>4.475 -2.333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -631,7 +631,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_3'>
+      <model name='qr_code_clone_intersection_zone_d_station_1'>
         <pose>4.475 -4.666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -641,7 +641,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_0_clone_4'>
+      <model name='qr_code_intersection_zone_y_station_1'>
         <pose>4.475 -6.999 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -651,7 +651,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1'>
+      <model name='qr_code_station_1_center'>
         <pose>4.475 0 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -661,7 +661,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone'>
+      <model name='qr_code_zone_a_center'>
         <pose>0 4.66666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -681,7 +681,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_1'>
+      <model name='qr_code_zone_a_up'>
         <pose>-1 4.66667 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -691,7 +691,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_clone'>
+      <model name='qr_code_zone_b_center'>
         <pose>0 2.33333 0.0615 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -701,7 +701,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_clone_0'>
+      <model name='qr_code_zone_b_down'>
         <pose>1 2.33333 0.0615 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -711,7 +711,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_clone_1'>
+      <model name='qr_code_zone_b_up'>
         <pose>-1 2.33333 0.0615 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -721,7 +721,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_clone_1_clone'>
+      <model name='qr_code_zone_c_center'>
         <pose>0 -2.33333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -731,7 +731,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_clone_1_clone_clone'>
+      <model name='qr_code_zone_c_down'>
         <pose>1 -2.33333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -741,7 +741,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_1_clone_clone_1_clone_clone_0'>
+      <model name='qr_code_zone_c_up'>
         <pose>-1 -2.33333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -751,7 +751,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_2'>
+      <model name='qr_code_center'>
         <pose>0 0 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -761,7 +761,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_3'>
+      <model name='qr_code_station_2_center'>
         <pose>-4.475 0 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -771,7 +771,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_3_clone'>
+      <model name='qr_code_station_2_left'>
         <pose>-4.475 -1 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -781,7 +781,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_3_clone_0'>
+      <model name='qr_code_station_2_right'>
         <pose>-4.476 1 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -791,7 +791,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_3_clone_1'>
+      <model name='qr_code_station_2_up'>
         <pose>-3.5 0 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -801,7 +801,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone'>
+      <model name='qr_code_intersection_zone_b_station_1'>
         <pose>4.475 2.333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -811,7 +811,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone'>
+      <model name='qr_code_intersection_zone_a_station_1'>
         <pose>4.475 4.666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -821,7 +821,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone_0'>
+      <model name='qr_code_intersection_zone_x_station_1'>
         <pose>4.475 6.999 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -831,7 +831,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone_1'>
+      <model name='qr_code_zone_x_center'>
         <pose>0 6.9999 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -841,7 +841,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone_2'>
+      <model name='qr_code_intersection_zone_x_station_2'>
         <pose>-4.475 6.999 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -851,7 +851,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone_3'>
+      <model name='qr_code_intersection_zone_a_station_2'>
         <pose>-4.475 4.666 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -861,7 +861,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone_4'>
+      <model name='qr_code_intersection_zone_b_station_2'>
         <pose>-4.475 2.333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -871,7 +871,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='qr_code_clone_clone_clone_5'>
+      <model name='qr_code_intersection_zone_c_station_2'>
         <pose>-4.475 -2.333 0.061 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -2808,7 +2808,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone'>
+    <model name='qr_code_station_1_right'>
       <pose>4.47594 0.996953 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -2838,7 +2838,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0'>
+    <model name='qr_code_station_1_left'>
       <pose>4.47372 -1.0622 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -2868,7 +2868,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1'>
+    <model name='qr_code_station_1_center'>
       <pose>4.4758 0.000388 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -2898,7 +2898,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_2'>
+    <model name='qr_code_center'>
       <pose>-0.001902 0.003083 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -2928,7 +2928,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_3'>
+    <model name='qr_code_station_2_center'>
       <pose>-4.47466 0.000143 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -2958,7 +2958,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_3_clone'>
+    <model name='qr_code_station_2_left'>
       <pose>-4.47608 -1.15091 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -2988,7 +2988,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_3_clone_0'>
+    <model name='qr_code_station_2_right'>
       <pose>-4.47173 1.15643 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3018,7 +3018,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_3_clone_1'>
+    <model name='qr_code_station_2_up'>
       <pose>-3.44943 -0.007618 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3048,7 +3048,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone'>
+    <model name='qr_code_zone_a_center'>
       <pose>0.0917 4.66538 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3064,7 +3064,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_a_center</name>
+              <name>zone_a_center</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3078,7 +3078,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_0'>
+    <model name='qr_code_zone_a_down'>
       <pose>1.16746 4.66688 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3094,7 +3094,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_a_down</name>
+              <name>zone_a_down</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3108,7 +3108,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_1'>
+    <model name='qr_code_zone_a_up'>
       <pose>-1.01274 4.66649 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3124,7 +3124,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_a_up</name>
+              <name>zone_a_up_a_up</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3138,7 +3138,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_clone'>
+    <model name='qr_code_zone_b_center'>
       <pose>-0.02811 2.32245 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3154,7 +3154,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_b_center</name>
+              <name>zone_b_center</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3168,7 +3168,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_clone_0'>
+    <model name='qr_code_zone_b_down'>
       <pose>1.09484 2.33298 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3184,7 +3184,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_b_down</name>
+              <name>zone_b_down</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3198,7 +3198,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_clone_1'>
+    <model name='qr_code_zone_b_up'>
       <pose>-1.42438 2.33086 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3214,7 +3214,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_b_up</name>
+              <name>zone_b_up</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3228,7 +3228,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_clone_1_clone'>
+    <model name='qr_code_zone_c_center'>
       <pose>0.012777 -2.33172 0.0615 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3244,7 +3244,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_c_center</name>
+              <name>zone_c_center</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3258,7 +3258,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_clone_1_clone_clone'>
+    <model name='qr_code_zone_c_down'>
       <pose>1.09119 -2.33413 0.0615 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3274,7 +3274,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_c_down</name>
+              <name>zone_c_down</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3288,7 +3288,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_1_clone_clone_1_clone_clone_0'>
+    <model name='qr_code_zone_c_up'>
       <pose>-0.995162 -2.33591 0.0615 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3304,7 +3304,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_c_up</name>
+              <name>zone_c_up</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3318,7 +3318,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone'>
+    <model name='qr_code_zone_d_center'>
       <pose>0.077847 -4.6681 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3334,7 +3334,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_d_center</name>
+              <name>zone_d_center</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3348,7 +3348,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_0'>
+    <model name='qr_code_zone_d_down'>
       <pose>0.997775 -4.66632 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3364,7 +3364,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_d_down</name>
+              <name>zone_d_down</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3378,7 +3378,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_1'>
+    <model name='qr_code_zone_d_up'>
       <pose>-1.08981 -4.66699 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3394,7 +3394,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_d_up</name>
+              <name>zone_d_up</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3408,7 +3408,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone'>
+    <model name='qr_code_intersection_zone_b_station_1'>
       <pose>4.47534 2.33329 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3424,7 +3424,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>intersection_zone_b_station_1</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3438,7 +3438,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone'>
+    <model name='qr_code_intersection_zone_a_station_1'>
       <pose>4.47482 4.66373 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3454,7 +3454,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>intersection_zone_a_station_1</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3468,7 +3468,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone_0'>
+    <model name='qr_code_intersection_zone_x_station_1'>
       <pose>4.47546 6.99962 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3484,7 +3484,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>intersection_zone_x_station_1</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3498,7 +3498,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone_1'>
+    <model name='qr_code_zone_x_center'>
       <pose>0.333436 7.00082 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3514,7 +3514,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>zone_x_center</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3528,7 +3528,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone_2'>
+    <model name='qr_code_intersection_zone_x_station_2'>
       <pose>-4.47212 7.00181 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3558,7 +3558,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone_3'>
+    <model name='qr_code_intersection_zone_a_station_2'>
       <pose>-4.47576 4.66566 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3574,7 +3574,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>intersection_zone_x_station_2</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3588,7 +3588,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone_4'>
+    <model name='qr_code_intersection_zone_b_station_2'>
       <pose>-4.47507 2.33294 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3604,7 +3604,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>intersection_zone_b_station_2</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3618,7 +3618,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_clone_clone_5'>
+    <model name='qr_code_intersection_zone_c_station_2'>
       <pose>-4.47172 -2.33143 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3634,7 +3634,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_right</name>
+              <name>intersection_zone_d_station_2</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3648,7 +3648,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_1_clone'>
+    <model name='qr_code_intersection_zone_d_station_2'>
       <pose>-4.47447 -4.66634 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3664,7 +3664,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_d_up</name>
+              <name>intersection_zone_d_station_2</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3678,7 +3678,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_1_clone_0'>
+    <model name='qr_code_intersection_zone_y_station_2'>
       <pose>-4.47547 -7.00043 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3694,7 +3694,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_d_up</name>
+              <name>intersection_zone_y_station_2</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3708,7 +3708,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_1_clone_1'>
+    <model name='qr_code_zone_y_center'>
       <pose>-1.45413 -7.00157 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3724,7 +3724,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>charging_station_d_up</name>
+              <name>zone_y_center</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3738,7 +3738,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_2'>
+    <model name='qr_code_intersection_zone_c_station_1'>
       <pose>4.47438 -2.33404 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3754,7 +3754,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_left</name>
+              <name>intersection_zone_c_station_1</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3768,7 +3768,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_3'>
+    <model name='qr_code_intersection_zone_d_station_1'>
       <pose>4.47625 -4.66548 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3784,7 +3784,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_left</name>
+              <name>intersection_zone_d_station_1</name>
             </script>
             <shader type='pixel'/>
           </material>
@@ -3798,7 +3798,7 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
-    <model name='qr_code_clone_0_clone_4'>
+    <model name='qr_code_intersection_zone_y_station_1'>
       <pose>4.47592 -6.99989 0.061 0 -0 0</pose>
       <link name='link_0'>
         <pose>0 0 0 0 -0 0</pose>
@@ -3814,7 +3814,7 @@
             <script>
               <uri>model://qr_code/materials/scripts</uri>
               <uri>model://qr_code/materials/textures</uri>
-              <name>station_1_left</name>
+              <name>intersection_zone_y_station_1</name>
             </script>
             <shader type='pixel'/>
           </material>

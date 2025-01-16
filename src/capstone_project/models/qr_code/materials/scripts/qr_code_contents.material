@@ -275,3 +275,364 @@ material charging_station_d_center
     }
   }
 }
+material zone_a_center
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_a_center.png
+      }
+    }
+  }
+}
+
+material zone_a_up
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_a_up.png
+      }
+    }
+  }
+}
+
+material zone_a_down
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_a_down.png
+      }
+    }
+  }
+}
+
+material zone_b_center
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_b_center.png
+      }
+    }
+  }
+}
+
+material zone_b_up
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_b_up.png
+      }
+    }
+  }
+}
+
+material zone_b_down
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_b_down.png
+      }
+    }
+  }
+}
+
+material zone_c_center
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_c_center.png
+      }
+    }
+  }
+}
+
+material zone_c_up
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_c_up.png
+      }
+    }
+  }
+}
+
+material zone_c_down
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_c_down.png
+      }
+    }
+  }
+}
+
+material zone_d_center
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_d_center.png
+      }
+    }
+  }
+}
+
+material zone_d_up
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_d_up.png
+      }
+    }
+  }
+}
+
+material zone_d_down
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_d_down.png
+      }
+    }
+  }
+}
+material zone_x_center
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_x_center.png
+      }
+    }
+  }
+}
+material zone_y_center
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture zone_y_center.png
+      }
+    }
+  }
+}
+
+material intersection_zone_a_station_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_a_station_1.png
+      }
+    }
+  }
+}
+
+material intersection_zone_a_station_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_a_station_2.png
+      }
+    }
+  }
+}
+
+material intersection_zone_b_station_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_b_station_1.png
+      }
+    }
+  }
+}
+
+material intersection_zone_b_station_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_b_station_2.png
+      }
+    }
+  }
+}
+
+material intersection_zone_c_station_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_c_station_1.png
+      }
+    }
+  }
+}
+
+material intersection_zone_c_station_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_c_station_2.png
+      }
+    }
+  }
+}
+
+material intersection_zone_d_station_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_d_station_1.png
+      }
+    }
+  }
+}
+
+material intersection_zone_d_station_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_d_station_2.png
+      }
+    }
+  }
+}
+
+material intersection_zone_x_station_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_x_station_1.png
+      }
+    }
+  }
+}
+
+material intersection_zone_x_station_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_x_station_2.png
+      }
+    }
+  }
+}
+
+material intersection_zone_y_station_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_y_station_1.png
+      }
+    }
+  }
+}
+
+material intersection_zone_y_station_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture intersection_zone_y_station_2.png
+      }
+    }
+  }
+}
