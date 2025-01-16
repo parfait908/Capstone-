@@ -6,7 +6,7 @@ material teknofest_logo
     {
       texture_unit
       {
-        texture Teknofest_merged34.png
+        texture Teknofest_merged3.png
       }
     }
   }
