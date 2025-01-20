@@ -1,0 +1,22 @@
+<launch>
+    <!-- Include the empty Gazebo world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find gazebo_ros)/worlds/empty.world"/>
+  </include>
+
+  <!-- Spawn the robot -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find my_robot_description)/urdf/my_robot.urdf.xacro" />
+ <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model my_robot -x 0 -y 0 -z 0.5" />
+
+ 
+<rosparam command="load" file="$(find my_robot_description)/urdf/controller.yaml"/>
+
+  <!-- Start the controller manager and load the position joint controller -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" args="position_joint_controller" />
+
+
+
+
+
+</launch>
+

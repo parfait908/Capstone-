@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" >
+
+<gazebo reference="base_link">
+<material>Gazebo/Blue</material>
+</gazebo>
+
+
+<gazebo reference="left_wheel_link">
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="right_wheel_link">
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="caster_link_f">
+<material>Gazebo/Green</material>
+<mu1 value="0.1"/>
+<mu2 value="0.1"/>
+</gazebo>
+<gazebo reference="caster_link_b">
+<material>Gazebo/Yellow</material>
+<mu1 value="0.1"/>
+<mu2 value="0.1"/>
+</gazebo>
+
+
+<!-- camera test 2-->
+  <gazebo reference="camera_link">
+    <sensor type="camera" name="camera1">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>rrbot/camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+<!-- hokuyo lidar test 2 -->
+  <gazebo reference="lidar_link">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0.23 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.30</min>
+          <max>100</max>
+          <resolution>0.001</resolution>
+        </range>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>lidar_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+<gazebo>
+  	<plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+	    <legacyMode>true</legacyMode>
+	    <rosDebugLevel>Debug</rosDebugLevel>
+	    <publishWheelTF>false</publishWheelTF>
+	    <robotNamespace>/</robotNamespace>
+	    <publishTf>1</publishTf>
+	    <publishWheelJointState>false</publishWheelJointState>
+	    <alwaysOn>true</alwaysOn>
+	    <updateRate>100.0</updateRate>
+	    <leftJoint>left_wheel_joint</leftJoint>
+	    <rightJoint>right_wheel_joint</rightJoint>
+	    <wheelSeparation>${base_width}</wheelSeparation>
+	    <wheelDiameter>${wheel_r * 2}</wheelDiameter>
+	    <broadcastTF>1</broadcastTF>
+	    <wheelTorque>30</wheelTorque>
+	    <wheelAcceleration>1.8</wheelAcceleration>
+	    <commandTopic>cmd_vel</commandTopic>
+	    <odometryFrame>odom</odometryFrame> 
+	    <odometryTopic>odom</odometryTopic> 
+	    <robotBaseFrame>base_footprint</robotBaseFrame>
+
+
+   </plugin>
+  </gazebo> 
+
+<gazebo> 
+       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/platform_lift</robotNamespace>
+            <controlPeriod>0.001</controlPeriod>
+        </plugin>
+    </gazebo>
+
+<!-- Transmissions for ROS Control -->
+
+   <xacro:transmission_block joint_name="left_wheel_joint"/>
+   <xacro:transmission_block joint_name="right_wheel_joint"/>
+
+   <transmission name="prismatic_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="platform_lift_joint">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="prismatic_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- ROS control plugin -->
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  </plugin>
+</gazebo>
+
+
+
+</robot>
