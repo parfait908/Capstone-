@@ -1,10 +1,4 @@
-## Setup Instructions for My Robot Description Package
-
-### Build the Package
-Make sure to build the package using `catkin_make`:
-```bash
-catkin_make
-```
+## Setup Instructions for robot_simple_movement Package
 
 ### Source the Workspace
 Source the workspace to use the package:
@@ -15,15 +9,18 @@ source <path_to_workspace>/devel/setup.bash
 ### Running Rviz
 To view the robot in Rviz, run:
 ```bash
-roslaunch my_robot_description display.launch
+roslaunch robot_simple_movement view_test.launch
 ```
 
 ### Running Gazebo
 To simulate the robot in Gazebo, run:
 ```bash
-roslaunch my_robot_description gazebo.launch
+roslaunch robot_simple_movement gazebo_test.launch
 ```
-
+### control the robot manually in Gazebo:
+```bash
+rosrun controller_manager spawner diff_drive_controller
+```
 ### Viewing the Robot and URDF Tutorial
 
 #### Step 1: Install the URDF Tutorial Package
