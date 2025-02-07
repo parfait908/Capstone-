@@ -1,9 +1,18 @@
 # Setup instruction for ie_communication ros package
 
 * install ros noetic on your remote computer
+* install gmapping
+* install cv2, sqlite, signalslot, socketio, asyncio
+  ```
+  pip install socketio
+  pip install asyncio
+  pip install cv2
+  pip install sqlite
+  pip install signalslot
+  ```
 * move to ROS folder
 * run catkin_make command
 * run source devel/setup.bash
-* run roslaunch ie_communication lch.launch
-* qreader and cv2 are required to launch follower.py
-* run follower.py separately as a normal python file
+* ```
+  run roslaunch ie_communication final.launch
+  ```
