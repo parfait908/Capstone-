@@ -1,8 +1,8 @@
-import { clientStore } from "../store/clientStore";
+import { core } from "../store/core";
 import { useRef } from "react";
 
 const RemoteButton = function (props) {
-  const { sendDirection } = clientStore();
+  const { sendDirection } = core();
   const intervalIdRef = useRef(null); // Ref for interval ID
 
   const startSendingDirection = (direction) => {

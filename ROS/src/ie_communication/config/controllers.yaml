@@ -1,0 +1,8 @@
+diff_drive_controller:
+  type: "diff_drive_controller/DiffDriveController"
+  left_wheel: "wheel_left_joint"
+  right_wheel: "wheel_right_joint"
+  publish_rate: 50
+  velocity_rolling_window_size: 10
+  wheel_separation: 0.45
+  wheel_radius: 0.1

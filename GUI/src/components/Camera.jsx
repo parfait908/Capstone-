@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { clientStore } from "../store/clientStore";
+import { core } from "../store/core";
 
 
 const Camera = (props) => {
     const imgRef = useRef(null)
-    const {cameraData, camera_qr_data} = clientStore()
+    const {cameraData, camera_qr_data} = core()
     const [cam, setcam] = useState("front") 
 
     useEffect(function(){
@@ -39,15 +39,10 @@ const Camera = (props) => {
 
     return (
         <>
-            <div className="cam-state">
-                <span className="text-white">Camera state </span>
-                <label className="switch">
-                    <input type="checkbox" name="switch" id="switch" />
-                    <span className="slider round"></span>
-                </label>
-                <select name="camera" id="camera" className="ml-2 h-full bg-transparent text-white border" onChange={onCameraChange}>
-                    <option value="front">Main camera</option>
-                    <option value="back">QR code camera</option>
+            <div className="cam-state ">
+                <select name="camera" id="camera" className="ml-2 h-10 bg-transparent text-white border" onChange={onCameraChange}>
+                    <option value="front" className="text-black">Main camera</option>
+                    <option value="back"  className="text-black">QR code camera</option>
                 </select>
             </div>
             <div className="w-full h-full ">

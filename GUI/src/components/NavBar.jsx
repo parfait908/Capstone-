@@ -1,9 +1,9 @@
 import { TbBaselineDensitySmall } from "react-icons/tb";
-import { clientStore } from "../store/clientStore";
+import { core } from "../store/core";
 
 
 const NavBar = (props) => {
-    const {menu, menuOpened, setmenuOpened} =clientStore();
+    const {menu, menuOpened, setmenuOpened} =core();
     const handleMenu = () => {
         setmenuOpened(!menuOpened);
     }
@@ -12,7 +12,7 @@ const NavBar = (props) => {
             <button onClick={handleMenu}>
                 <TbBaselineDensitySmall className="size-8 ml-2"/>
             </button>
-            <h1 className="ml-2">{menu}</h1>
+            <h1 className="ml-2 text-white">{menu}</h1>
         </div>
     );
 }

@@ -2,10 +2,18 @@
 #include <iostream>
 #include "std_msgs/Int32.h"
 #include "std_msgs/Float32.h"
+#include "std_msgs/String.h"
 #include <geometry_msgs/Twist.h>
+#include <ie_communication/robotGear.h>
 #include <cmath>
 
+
+
+
+geometry_msgs::Twist acvl;
+
 struct cmd_vel {
+
     int gear = 0;
 
     float lx = 0.0;
@@ -93,15 +101,21 @@ struct cmd_vel {
     }
 
     float getVelocity(){
-        float linear_velocity_rotational = az * radius;
-        float tVelocity = sqrt((pow(lx, 2) + pow(linear_velocity_rotational, 2)));
-        
-        return std::round(tVelocity * 100.0f) / 100.0f;
+        if (gear == 1){
+            float linear_velocity_rotational = az * radius;
+            float tVelocity = sqrt((pow(lx, 2) + pow(linear_velocity_rotational, 2)));
+            return std::round(tVelocity * 100.0f) / 100.0f;
+        }else{
+            float linear_velocity_rotational = acvl.angular.z * radius;
+            float tVelocity = sqrt((pow(acvl.linear.x, 2) + pow(linear_velocity_rotational, 2)));
+            return std::round(tVelocity * 100.0f) / 100.0f;
+        }
     }
 };
 
 // Declare a global instance of cmd_vel
 struct cmd_vel movedata;
+
 
 void debug() {
     ROS_INFO_STREAM("Publishing Twist message: linear.x = " << movedata.lx
@@ -110,7 +124,8 @@ void debug() {
 
 // Callback function for subscriber
 void callback(const std_msgs::Int32::ConstPtr& msg) {
-    if(movedata.gear == 1){
+
+    if(movedata.gear == 0){
         ROS_WARN_STREAM("The robot is in autonomous mode, manual control is disabled");
         return;
     }
@@ -136,19 +151,53 @@ void callback(const std_msgs::Int32::ConstPtr& msg) {
     }
 }
 
-int main(int argc, char** argv) {
-    // Initialize the ROS node
-    ros::init(argc, argv, "movementController");
+void updateProcess(const std_msgs::String::ConstPtr& msg){
+    if(msg->data == "Processing"){
+        movedata.reset();
+    }
+}
+
+bool changeGear (ie_communication::robotGear::Request &req, ie_communication::robotGear::Response &res){
+    movedata.gear = req.state;
+    if(movedata.gear == 0){
+        std::cout << "The robot is in autonomous mode, manual control is disabled" << std::endl;
+    }else{
+        std::cout << "The robot is in manual mode, autonomous control is disabled" << std::endl;
+    }
 
     ros::NodeHandle n;
+    ros::ServiceClient client = n.serviceClient<ie_communication::robotGear>("gear_changed");
+    ie_communication::robotGear srv;
 
+    srv.request.state = movedata.gear;
+
+    if(client.call(srv)){
+
+    }else{
+        ROS_ERROR("Failed to update the gear to GUI");
+    }
+
+    res.message = true;
+    return true;
+}
+
+void actualVel(const geometry_msgs::Twist& vel){
+    acvl = vel;
+}
+
+int main(int argc, char** argv) {
+    // Initialize the ROS node
+    
+    ros::init(argc, argv, "movementController");
+    ros::NodeHandle n;
     ros::Subscriber sub = n.subscribe("manual_controller", 1000, callback);
+    ros::Subscriber processSub = n.subscribe("ProcessState", 1000, updateProcess);
+    ros::Subscriber cvl = n.subscribe("cmd_vel", 1000, actualVel);
 
     ros::Publisher speedPub = n.advertise<std_msgs::Float32>("speed_value", 10);
-
-    ros::Subscriber sub2 = n.subscribe("robot_gear", 1000, &cmd_vel::changeGear, &movedata);
-
     ros::Publisher pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 10);
+
+    ros::ServiceServer clientGear = n.advertiseService("change_gear", changeGear);
 
     ros::Rate loop_rate(10); 
 
@@ -168,8 +217,11 @@ int main(int argc, char** argv) {
         twist_msg.angular.x = movedata.ax;
         twist_msg.angular.y = movedata.ay;
         twist_msg.angular.z = movedata.az;
+        if(movedata.gear == 1){
+            
+            pub.publish(twist_msg);
 
-        pub.publish(twist_msg);
+        }
         std_msgs::Float32 vel;
         vel.data = movedata.getVelocity();
         speedPub.publish(vel);

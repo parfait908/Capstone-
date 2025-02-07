@@ -1,31 +1,29 @@
+import { Routes, Route } from "react-router-dom";
+import Remote from "./Remote";
+import Task from "./Task";
+import Dashboard from "./DashBoard";
+import { core } from "../store/core";
+import Loader from "./Loader";
+import NavBar from "./NavBar";
 
-import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Remote from './Remote';
-import Task from './Task';
-import Dashboard from './DashBoard';
-import { clientStore } from '../store/clientStore';
-import Loarder from './Loader';
-import NavBar from './NavBar';
-const MainLayout = function(props) {   
+const MainLayout = () => {
+  const { connectedSocket, menuOpened } = core();
 
-    const {connectedRos, connectedSocket, menuOpened} = clientStore();
-    const cn = !menuOpened ? "w-full h-full    overflow-hidden" : " h-full   animate-[pslidein_1s_forwards]  overflow-hidden"
-    
-    return(
-        
-        <div className={cn}>
-        <NavBar/>
-        <div className='w-full h-[calc(100%-64px)]'>
-            <Routes>
-                <Route path="/" element={connectedSocket  ? <Dashboard /> : <Loarder/>} />
-                <Route path="/remote" element={connectedSocket  ? <Remote /> : <Loarder/>} />
-                <Route path="/task" element={connectedSocket  ? <Task /> : <Loarder/>} />
-                <Route path="/dashboard" element={connectedSocket  ? <Dashboard /> : <Loarder/>} />
-            </Routes>
-        </div>
-        
-
-        </div>)
-}
+  return (
+    <div className="w-full h-full overflow-hidden">
+      <NavBar />
+      <div className="w-full h-[calc(100%-64px)]">
+        <Routes>
+          <Route path="/" element={connectedSocket ? <Remote /> : <Loader />} />
+          <Route
+            path="/remote"
+            element={connectedSocket ? <Remote /> : <Loader />}
+          />
+          <Route path="/task" element={connectedSocket ? <Task /> : <Loader />} />
+        </Routes>
+      </div>
+    </div>
+  );
+};
 
 export default MainLayout;

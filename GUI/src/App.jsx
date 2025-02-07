@@ -3,16 +3,15 @@ import SideBar from "./components/sideBar";
 import "./css/main.css";
 import { BrowserRouter } from 'react-router-dom';
 import MainLayout from "./components/MainLayout";
-import { clientStore } from "./store/clientStore";
+import { core } from "./store/core";
 import Loarder from "./components/Loader";
 import {Toaster} from "react-hot-toast"
 
 function App() {
-  const {initializeSocket, initializeRos, connectedSocket, connectedRos}= clientStore()
+  const {initializeSocket, connectedSocket, connectedRos}= core()
   useEffect(function(){
     initializeSocket()
-    initializeRos()
-  },[initializeSocket, initializeRos])
+  },[initializeSocket])
 
   if(!(connectedSocket  )){
     return <Loarder/>

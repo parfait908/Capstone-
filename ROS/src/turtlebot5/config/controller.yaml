@@ -1,0 +1,4 @@
+position_joint_controller:
+  type: position_controllers/JointPositionController
+  joint: platform_lift_joint # Replace with the exact name of your prismatic joint
+  pid: {p: 100.0, i: 0.01, d: 10.0}
